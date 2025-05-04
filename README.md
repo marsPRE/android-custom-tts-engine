@@ -1,4 +1,4 @@
-# [Project Name - e.g., Custom TTS Service for Android]
+# Custom TTS Service for Android
 
 An Android Text-to-Speech (TTS) engine that connects to configurable OpenAI-compatible API backends (those supporting the `/v1/audio/speech` endpoint format).
 
@@ -40,7 +40,7 @@ The TTS service will use these saved settings for subsequent synthesis requests.
 ## Screenshots
 
 *(Optional: Add screenshots of the main screen and the new settings screen here)*
-
+<img src="path/to/main_screen.png" width="30%"> <img src="path/to/settings_screen.png" width="30%">
 
 ## Future Work / TODO
 
