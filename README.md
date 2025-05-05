@@ -39,7 +39,7 @@ The TTS service will use these saved settings for subsequent synthesis requests.
 
 ## Screenshots
 
-<img src="img/img_backend_settings.png" width="25%"> <img src="img/img_tts_engine_select.png" width="25%">
+<img src="img/img_tts_engine_select.png" width="25%"><img src="img/img_backend_settings.png" width="25%"> 
 
 ## Future Work / TODO
 
