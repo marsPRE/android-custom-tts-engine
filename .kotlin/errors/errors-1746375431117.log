@@ -1,0 +1,112 @@
+kotlin version: 2.1.20
+error message: org.jetbrains.kotlin.backend.common.BackendException: Backend Internal error: Exception during IR lowering
+File being compiled: C:/Users/mspre/AndroidStudioProjects/DummyTTS/app/src/main/java/com/example/dummytts/MainActivity.kt
+The root cause java.lang.RuntimeException was thrown at: org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate(FunctionCodegen.kt:48)
+	at org.jetbrains.kotlin.backend.common.CodegenUtil.reportBackendException(CodegenUtil.kt:107)
+	at org.jetbrains.kotlin.backend.common.CodegenUtil.reportBackendException$default(CodegenUtil.kt:90)
+	at org.jetbrains.kotlin.backend.common.phaser.PerformByIrFilePhase.invokeSequential(performByIrFile.kt:54)
+	at org.jetbrains.kotlin.backend.common.phaser.PerformByIrFilePhase.invoke(performByIrFile.kt:41)
+	at org.jetbrains.kotlin.backend.common.phaser.PerformByIrFilePhase.invoke(performByIrFile.kt:27)
+	at org.jetbrains.kotlin.config.phaser.CompilerPhaseKt.invokeToplevel(CompilerPhase.kt:62)
+	at org.jetbrains.kotlin.backend.jvm.JvmIrCodegenFactory.invokeCodegen(JvmIrCodegenFactory.kt:371)
+	at org.jetbrains.kotlin.cli.jvm.compiler.KotlinToJVMBytecodeCompiler.runCodegen$cli(KotlinToJVMBytecodeCompiler.kt:413)
+	at org.jetbrains.kotlin.cli.pipeline.jvm.JvmBackendPipelinePhase.executePhase(JvmBackendPipelinePhase.kt:98)
+	at org.jetbrains.kotlin.cli.pipeline.jvm.JvmBackendPipelinePhase.executePhase(JvmBackendPipelinePhase.kt:30)
+	at org.jetbrains.kotlin.cli.pipeline.PipelinePhase.phaseBody(PipelinePhase.kt:68)
+	at org.jetbrains.kotlin.cli.pipeline.PipelinePhase.phaseBody(PipelinePhase.kt:58)
+	at org.jetbrains.kotlin.config.phaser.SimpleNamedCompilerPhase.phaseBody(CompilerPhase.kt:215)
+	at org.jetbrains.kotlin.config.phaser.NamedCompilerPhase.invoke(CompilerPhase.kt:111)
+	at org.jetbrains.kotlin.backend.common.phaser.CompositePhase.invoke(PhaseBuilders.kt:28)
+	at org.jetbrains.kotlin.config.phaser.CompilerPhaseKt.invokeToplevel(CompilerPhase.kt:62)
+	at org.jetbrains.kotlin.cli.pipeline.AbstractCliPipeline.runPhasedPipeline(AbstractCliPipeline.kt:106)
+	at org.jetbrains.kotlin.cli.pipeline.AbstractCliPipeline.execute(AbstractCliPipeline.kt:65)
+	at org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.doExecutePhased(K2JVMCompiler.kt:61)
+	at org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.doExecutePhased(K2JVMCompiler.kt:36)
+	at org.jetbrains.kotlin.cli.common.CLICompiler.execImpl(CLICompiler.kt:80)
+	at org.jetbrains.kotlin.cli.common.CLICompiler.exec(CLICompiler.kt:337)
+	at org.jetbrains.kotlin.incremental.IncrementalJvmCompilerRunner.runCompiler(IncrementalJvmCompilerRunner.kt:466)
+	at org.jetbrains.kotlin.incremental.IncrementalJvmCompilerRunner.runCompiler(IncrementalJvmCompilerRunner.kt:75)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.doCompile(IncrementalCompilerRunner.kt:514)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.compileImpl(IncrementalCompilerRunner.kt:431)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.compileNonIncrementally(IncrementalCompilerRunner.kt:310)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.compile(IncrementalCompilerRunner.kt:137)
+	at org.jetbrains.kotlin.daemon.CompileServiceImplBase.execIncrementalCompiler(CompileServiceImpl.kt:678)
+	at org.jetbrains.kotlin.daemon.CompileServiceImplBase.access$execIncrementalCompiler(CompileServiceImpl.kt:92)
+	at org.jetbrains.kotlin.daemon.CompileServiceImpl.compile(CompileServiceImpl.kt:1805)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(Unknown Source)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Unknown Source)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Unknown Source)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(Unknown Source)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(Unknown Source)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.RuntimeException: Exception while generating code for:
+FUN LOCAL_FUNCTION_FOR_LAMBDA name:onCreate$lambda$12$lambda$11$lambda$10 visibility:private modality:FINAL <> (paddingValues:androidx.compose.foundation.layout.PaddingValues) returnType:kotlin.Unit?
+  VALUE_PARAMETER name:paddingValues index:0 type:androidx.compose.foundation.layout.PaddingValues
+  BLOCK_BODY
+    CALL 'public final fun Column (modifier: androidx.compose.ui.Modifier, verticalArrangement: androidx.compose.foundation.layout.Arrangement.Vertical, horizontalAlignment: androidx.compose.ui.Alignment.Horizontal, content: @[Composable] @[ExtensionFunctionType] kotlin.Function1<androidx.compose.foundation.layout.ColumnScope, kotlin.Unit>): kotlin.Unit [inline] declared in androidx.compose.foundation.layout.ColumnKt' type=kotlin.Unit origin=null
+      modifier: CALL 'public final fun padding-3ABfNKs (all: androidx.compose.ui.unit.Dp): androidx.compose.ui.Modifier declared in androidx.compose.foundation.layout.PaddingKt' type=androidx.compose.ui.Modifier origin=null
+        $receiver: CALL 'public final fun padding (paddingValues: androidx.compose.foundation.layout.PaddingValues): androidx.compose.ui.Modifier declared in androidx.compose.foundation.layout.PaddingKt' type=androidx.compose.ui.Modifier origin=null
+          $receiver: CALL 'public final fun fillMaxSize$default (fraction: kotlin.Float, $mask0: kotlin.Int, $handler: kotlin.Any?): androidx.compose.ui.Modifier declared in androidx.compose.foundation.layout.SizeKt' type=androidx.compose.ui.Modifier origin=DEFAULT_DISPATCH_CALL
+            $receiver: GET_FIELD 'FIELD FIELD_FOR_OBJECT_INSTANCE name:Companion type:androidx.compose.ui.Modifier.Companion visibility:public [final,static] declared in androidx.compose.ui.Modifier' type=androidx.compose.ui.Modifier.Companion origin=null
+            fraction: COMPOSITE type=kotlin.Float origin=DEFAULT_VALUE
+              CONST Float type=kotlin.Float value=0.0
+            $mask0: CONST Int type=kotlin.Int value=1
+            $handler: CONST Null type=kotlin.Any? value=null
+          paddingValues: GET_VAR 'paddingValues: androidx.compose.foundation.layout.PaddingValues declared in com.example.dummytts.MainActivity.onCreate$lambda$12$lambda$11$lambda$10' type=androidx.compose.foundation.layout.PaddingValues origin=null
+        all: CALL 'public final fun <get-dp> (): androidx.compose.ui.unit.Dp [inline] declared in androidx.compose.ui.unit.DpKt' type=androidx.compose.ui.unit.Dp origin=GET_PROPERTY
+          $receiver: CONST Int type=kotlin.Int value=16
+      verticalArrangement: CALL 'public final fun <get-Center> (): androidx.compose.foundation.layout.Arrangement.HorizontalOrVertical declared in androidx.compose.foundation.layout.Arrangement' type=androidx.compose.foundation.layout.Arrangement.HorizontalOrVertical origin=GET_PROPERTY
+        $this: GET_FIELD 'FIELD FIELD_FOR_OBJECT_INSTANCE name:INSTANCE type:androidx.compose.foundation.layout.Arrangement visibility:public [final,static] declared in androidx.compose.foundation.layout.Arrangement' type=androidx.compose.foundation.layout.Arrangement origin=null
+      horizontalAlignment: CALL 'public final fun <get-CenterHorizontally> (): androidx.compose.ui.Alignment.Horizontal declared in androidx.compose.ui.Alignment.Companion' type=androidx.compose.ui.Alignment.Horizontal origin=GET_PROPERTY
+        $this: GET_FIELD 'FIELD FIELD_FOR_OBJECT_INSTANCE name:Companion type:androidx.compose.ui.Alignment.Companion visibility:public [final,static] declared in androidx.compose.ui.Alignment' type=androidx.compose.ui.Alignment.Companion origin=null
+      content: BLOCK type=@[ExtensionFunctionType] kotlin.Function1<androidx.compose.foundation.layout.ColumnScope, kotlin.Unit> origin=LAMBDA
+        COMPOSITE type=kotlin.Unit origin=null
+        FUNCTION_REFERENCE 'private final fun onCreate$lambda$12$lambda$11$lambda$10$lambda$9 (): kotlin.Unit declared in com.example.dummytts.MainActivity' type=@[ExtensionFunctionType] kotlin.Function1<androidx.compose.foundation.layout.ColumnScope, kotlin.Unit> origin=INLINE_LAMBDA reflectionTarget=null
+
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate(FunctionCodegen.kt:48)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate$default(FunctionCodegen.kt:41)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generateMethodNode(ClassCodegen.kt:405)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generateMethod(ClassCodegen.kt:422)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generate(ClassCodegen.kt:167)
+	at org.jetbrains.kotlin.backend.jvm.JvmIrCodegenFactory.generateFile$lambda$18(JvmIrCodegenFactory.kt:398)
+	at org.jetbrains.kotlin.backend.common.phaser.PhaseBuildersKt$createSimpleNamedCompilerPhase$1.phaseBody(PhaseBuilders.kt:68)
+	at org.jetbrains.kotlin.config.phaser.SimpleNamedCompilerPhase.phaseBody(CompilerPhase.kt:215)
+	at org.jetbrains.kotlin.config.phaser.NamedCompilerPhase.invoke(CompilerPhase.kt:111)
+	at org.jetbrains.kotlin.backend.common.phaser.PerformByIrFilePhase.invokeSequential(performByIrFile.kt:51)
+	... 43 more
+Caused by: org.jetbrains.kotlin.codegen.CompilationException: Back-end (JVM) Internal error: Couldn't inline method call: CALL 'public final fun Column (modifier: androidx.compose.ui.Modifier, verticalArrangement: androidx.compose.foundation.layout.Arrangement.Vertical, horizontalAlignment: androidx.compose.ui.Alignment.Horizontal, content: @[Composable] @[ExtensionFunctionType] kotlin.Function1<androidx.compose.foundation.layout.ColumnScope, kotlin.Unit>): kotlin.Unit [inline] declared in androidx.compose.foundation.layout.ColumnKt' type=kotlin.Unit origin=null
+Method: null
+File is unknown
+The root cause java.lang.IllegalStateException was thrown at: org.jetbrains.kotlin.codegen.inline.SourceCompilerForInlineKt.getMethodNode(SourceCompilerForInline.kt:128)
+	at org.jetbrains.kotlin.codegen.inline.InlineCodegen.performInline(InlineCodegen.kt:65)
+	at org.jetbrains.kotlin.backend.jvm.codegen.IrInlineCodegen.genInlineCall(IrInlineCodegen.kt:163)
+	at org.jetbrains.kotlin.backend.jvm.codegen.IrInlineCallGenerator.genCall(IrInlineCallGenerator.kt:36)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall(ExpressionCodegen.kt:594)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrCall.accept(IrCall.kt:24)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitStatementContainer(ExpressionCodegen.kt:520)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlockBody(ExpressionCodegen.kt:525)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlockBody(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrBlockBody.accept(IrBlockBody.kt:20)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.generate(ExpressionCodegen.kt:237)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.doGenerate(FunctionCodegen.kt:124)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate(FunctionCodegen.kt:45)
+	... 52 more
+Caused by: java.lang.IllegalStateException: couldn't find inline method Landroidx/compose/foundation/layout/ColumnKt;.Column(Landroidx/compose/ui/Modifier;Landroidx/compose/foundation/layout/Arrangement$Vertical;Landroidx/compose/ui/Alignment$Horizontal;Lkotlin/jvm/functions/Function1;)V
+	at org.jetbrains.kotlin.codegen.inline.SourceCompilerForInlineKt.getMethodNode(SourceCompilerForInline.kt:128)
+	at org.jetbrains.kotlin.codegen.inline.SourceCompilerForInlineKt.loadCompiledInlineFunction(SourceCompilerForInline.kt:97)
+	at org.jetbrains.kotlin.backend.jvm.codegen.IrSourceCompilerForInline.compileInlineFunction(IrSourceCompilerForInline.kt:92)
+	at org.jetbrains.kotlin.codegen.inline.InlineCodegen.compileInline(InlineCodegen.kt:42)
+	at org.jetbrains.kotlin.codegen.inline.InlineCodegen.performInline(InlineCodegen.kt:50)
+	... 64 more
+
+

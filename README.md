@@ -40,7 +40,7 @@ The TTS service will use these saved settings for subsequent synthesis requests.
 ## Screenshots
 
 *(Optional: Add screenshots of the main screen and the new settings screen here)*
-<img src="path/to/main_screen.png" width="30%"> <img src="path/to/settings_screen.png" width="30%">
+<img src="img/img_backend_settings.png" width="30%"> <img src="img/img_tts_engine_select.png" width="30%">
 
 ## Future Work / TODO
 
