@@ -1,4 +1,4 @@
-package com.example.dummytts.data // Stelle sicher, dass der Paketname korrekt ist
+package com.example.CustomTts.data // Stelle sicher, dass der Paketname korrekt ist
 
 import android.content.Context
 import androidx.datastore.core.DataStore

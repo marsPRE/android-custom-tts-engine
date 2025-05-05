@@ -13,11 +13,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.dummytts"
+    namespace = "com.example.CustomTts"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.dummytts"
+        applicationId = "com.example.CustomTts"
         minSdk = 27
         targetSdk = 35
         versionCode = 1

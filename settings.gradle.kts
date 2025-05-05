@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "DummyTTS"
+rootProject.name = "CustomTts"
 include(":app")
  

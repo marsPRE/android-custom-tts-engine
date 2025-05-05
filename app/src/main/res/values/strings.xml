@@ -1,3 +1,25 @@
 <resources>
-    <string name="app_name">DummyTTS</string>
+    <string name="settings_title">Backend Settings</string>
+    <string name="settings_back_description">Back</string>
+    <string name="settings_instruction">Enter the details for your OpenAI-compatible TTS backend here.</string>
+    <string name="settings_label_url">Backend URL</string>
+    <string name="settings_label_api_key">API Key</string>
+    <string name="settings_placeholder_api_key">sk-...</string>
+    <string name="settings_label_model">TTS Model</string>
+    <string name="settings_placeholder_model">e.g., tts-1</string>
+    <string name="settings_label_voice">TTS Voice</string>
+    <string name="settings_placeholder_voice">e.g., alloy</string>
+    <string name="settings_button_save">Save</string>
+    <string name="settings_snackbar_saved">Settings saved!</string>
+    <string name="settings_snackbar_save_error">Error saving settings!</string>
+    <string name="settings_snackbar_validation_error">Please fill in all fields (except API Key).</string>
+    <string name="settings_placeholder_url">https://api.openai.com/v1/audio/speech</string>
+    <string name="main_title">CustomTTS</string>
+    <string name="main_settings_action_description">Settings</string>
+    <string name="main_screen_text_1">Main Application Screen (Compose)</string>
+    <string name="main_screen_text_2">TTS Engine is active in the background.</string>
+    <string name="main_screen_text_3">Click the gear icon in the top right for settings.</string>
+    <string name="app_name">CustomTTS</string>
+    <string name="tts_engine_label">CustomTTS Engine</string>
+
 </resources>

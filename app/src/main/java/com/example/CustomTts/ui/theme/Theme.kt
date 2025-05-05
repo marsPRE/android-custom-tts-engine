@@ -1,4 +1,4 @@
-package com.example.dummytts.ui.theme // Passe Paketnamen an!
+package com.example.CustomTts.ui.theme // Passe Paketnamen an!
 
 import android.app.Activity
 import android.os.Build

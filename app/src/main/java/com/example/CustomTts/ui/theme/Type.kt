@@ -1,4 +1,4 @@
-package com.example.dummytts.ui.theme // Passe Paketnamen an!
+package com.example.CustomTts.ui.theme // Passe Paketnamen an!
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

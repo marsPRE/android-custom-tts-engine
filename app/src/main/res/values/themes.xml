@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <style name="Base.Theme.DummyTTS" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Base.Theme.CustomTTS" parent="Theme.MaterialComponents.DayNight.NoActionBar">
     </style>
 
-    <style name="Theme.DummyTTS" parent="Base.Theme.DummyTTS" />
+    <style name="Theme.CustomTTS" parent="Base.Theme.CustomTTS" />
 </resources>

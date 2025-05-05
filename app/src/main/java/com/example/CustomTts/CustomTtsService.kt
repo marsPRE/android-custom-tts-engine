@@ -1,4 +1,4 @@
-package com.example.dummytts // <<< ANPASSEN
+package com.example.CustomTts // <<< ANPASSEN
 
 import android.media.AudioFormat
 import android.speech.tts.SynthesisCallback
@@ -6,8 +6,8 @@ import android.speech.tts.SynthesisRequest
 import android.speech.tts.TextToSpeech
 import android.speech.tts.TextToSpeechService
 import android.util.Log
-import com.example.dummytts.data.PrefKeys // <<< ANPASSEN
-import com.example.dummytts.data.settingsDataStore // <<< ANPASSEN
+import com.example.CustomTts.data.PrefKeys // <<< ANPASSEN
+import com.example.CustomTts.data.settingsDataStore // <<< ANPASSEN
 import io.ktor.client.*
 import io.ktor.client.engine.cio.*
 import io.ktor.client.plugins.contentnegotiation.*
@@ -16,12 +16,11 @@ import io.ktor.client.statement.*
 import io.ktor.http.*
 import io.ktor.client.plugins.HttpTimeout
 import io.ktor.serialization.kotlinx.json.*
-import io.ktor.utils.io.errors.*
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.first
 import kotlinx.serialization.json.Json
 
-class DummyTtsService : TextToSpeechService() {
+class CustomTtsService : TextToSpeechService() {
 
     companion object {
         // Logging Tag
